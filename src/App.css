@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 100px 400px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer-container {
+  display: flex;
+  padding: 11px;
+  background-color: rgb(183, 183, 183);
+  border-radius: 8px;
+}
+
+.delete-btn {
+  background-color: rgb(183, 183, 183);
+  border: none;
+  font-size: large;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+.add-btn {
+  margin: 10px 0px;
+  width: 250px;
+  padding: 15px 0px;
+  font-size: large;
+  border: black 2px solid;
+}
+.add-btn {
+  width: max;
+}
+.left,
+.right {
+  margin: 30px;
+}
+.right {
+  margin-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
